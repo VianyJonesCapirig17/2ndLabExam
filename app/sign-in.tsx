@@ -45,7 +45,7 @@ export default function SignInScreen() {
         <TextInput style={styles.input} accessibilityLabel="Email" placeholder="student@example.com" placeholderTextColor="#87958c" value={email} onChangeText={setEmail} keyboardType="email-address" autoCapitalize="none" autoCorrect={false} autoComplete="email" />
         <Text style={styles.label}>Password</Text>
         <View style={styles.passwordField}>
-          <TextInput style={styles.passwordInput} accessibilityLabel="Password" placeholder="Enter your password" placeholderTextColor="#87958c" value={password} onChangeText={setPassword} secureTextEntry={!showPassword} autoCapitalize="none" autoComplete="current-password" />
+          <TextInput style={styles.passwordInput} accessibilityLabel="Password" placeholder="student-demo-2026" placeholderTextColor="#87958c" value={password} onChangeText={setPassword} secureTextEntry={!showPassword} autoCapitalize="none" autoComplete="current-password" />
           <Pressable
             accessibilityRole="button"
             accessibilityLabel={showPassword ? 'Hide password' : 'Show password'}
