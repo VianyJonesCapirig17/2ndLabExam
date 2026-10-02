@@ -4,11 +4,11 @@
 
 ### Student Information
 
-Name:
+Name: Viany Jones Capirig
 
 Section:
 
-Date:
+Date: 2026-10-02
 
 ### Required Features
 
@@ -27,19 +27,18 @@ Date:
 - [ ] Session restoration
 - [ ] Logout
 
-### API
+### JavaScript API
 
-Base URL: `REPLACE_WITH_EXAM_API` (set in `constants/api.ts`)
+The project includes a Node.js/Express API in `backend/` with `POST /api/login`,
+`GET /api/students`, `GET /api/students/:id`, and `GET /api/profile`. It reads records from
+`backend/data/students.json`; the included five records are examples for local testing.
+Replace them with authorized student records before assessment.
 
-POST /login
-
-GET /students
-
-GET /students/{id}
-
-GET /profile
-
-Use the instructor's API documentation for payloads and response fields.
+Run `npm run api:install` once, then `npm run api:setup` to configure the login email and
+password. The setup command stores a bcrypt hash, not the plaintext password, in the ignored
+`backend/.env` file. Start the API using `npm run api` and Expo using `npx expo start` in
+separate terminals. Android and the PC should be on the same Wi-Fi. The default API URL is
+in `constants/api.ts`; change it if your PC's LAN address changes.
 
 ### How to Run
 
@@ -50,19 +49,10 @@ npx expo start
 
 Press `w` for web, or run `npm run web` directly.
 
-The starter opens the dashboard without authentication so its screens can be inspected.
-Use **Open Sign In** to preview the login screen. Login, logout, and View Details
-buttons intentionally do nothing until their TODOs are completed. Student screens
-initially show loading until students implement the loaders. Preview the detail
-layout on web at `/student/1`; this does not create a sample API record.
+The dashboard and student routes require a successful login. Manage student records through
+`backend/data/students.json`; if that file is absent, the API returns an empty list.
 
-Search for `TODO EXAM` throughout the project. No requests or credentials are
-provided. Protect both the application tabs and the student detail route.
-
-Expo SecureStore is used only in `context/AuthContext.tsx`. Its methods are not
-implemented in this starter. SecureStore supports native platforms, not web;
-check availability before calling it and verify secure session persistence on
-Android/iOS. See the [Expo SDK 54 SecureStore documentation](https://docs.expo.dev/versions/v54.0.0/sdk/securestore/).
+Expo SecureStore is used on Android and iOS. See the [Expo SDK 54 SecureStore documentation](https://docs.expo.dev/versions/v54.0.0/sdk/securestore/).
 
 Compiler and lint checks:
 
@@ -70,19 +60,3 @@ Compiler and lint checks:
 npx tsc --noEmit
 npm run lint
 ```
-
-### Required Git Commits
-
-Students must create at least five meaningful commits.
-
-Suggested examples:
-
-- `exam: setup navigation`
-- `exam: implement login`
-- `exam: integrate student api`
-- `exam: add dynamic student details`
-- `exam: implement session and logout`
-
-### Submission
-
-Submit the GitHub repository URL according to the instructor's instructions.

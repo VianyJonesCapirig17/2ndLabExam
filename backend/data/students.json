@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "name": "Juan Dela Cruz",
+    "email": "juan.delacruz@example.com",
+    "course": "Bachelor of Science in Information Technology",
+    "section": "BSIT-3A",
+    "date": "October 2, 2026"
+  },
+  {
+    "id": "2",
+    "name": "Maria Santos",
+    "email": "maria.santos@example.com",
+    "course": "Bachelor of Science in Information Technology",
+    "section": "BSIT-3A",
+    "date": "October 2, 2026"
+  },
+  {
+    "id": "3",
+    "name": "Jose Reyes",
+    "email": "jose.reyes@example.com",
+    "course": "Bachelor of Science in Information Technology",
+    "section": "BSIT-3A",
+    "date": "October 2, 2026"
+  },
+  {
+    "id": "4",
+    "name": "Ana Garcia",
+    "email": "ana.garcia@example.com",
+    "course": "Bachelor of Science in Information Technology",
+    "section": "BSIT-3A",
+    "date": "October 2, 2026"
+  },
+  {
+    "id": "5",
+    "name": "Pedro Ramos",
+    "email": "pedro.ramos@example.com",
+    "course": "Bachelor of Science in Information Technology",
+    "section": "BSIT-3A",
+    "date": "October 2, 2026"
+  }
+]
