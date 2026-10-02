@@ -10,5 +10,3 @@
 8. Students must implement a dynamic [id] route.
 9. Authentication tokens must not be hardcoded.
 10. Plain-text passwords must not be stored.
-11. The project must contain at least five meaningful Git commits.
-12. The final code must be pushed to GitHub before the examination ends.

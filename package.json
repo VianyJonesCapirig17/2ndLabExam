@@ -4,6 +4,9 @@
   "version": "1.0.0",
   "scripts": {
     "start": "expo start",
+    "api:install": "npm --prefix backend install",
+    "api:setup": "npm --prefix backend run setup:account",
+    "api": "npm --prefix backend start",
     "reset-project": "node ./scripts/reset-project.js",
     "android": "expo start --android",
     "ios": "expo start --ios",
